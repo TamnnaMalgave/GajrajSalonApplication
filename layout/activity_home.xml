@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F4B8B4"
+    android:orientation="vertical"
+
+    tools:context=".MainActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="60dp"
+            android:src="@drawable/logo1"
+            android:background="@color/black"
+            ></ImageView>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <!-- TODO: Update blank fragment layout -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+
+                android:background="#070707"
+                android:textStyle="bold"
+                android:text="GAJRAJ"
+                android:textAlignment="textStart"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                app:fontFamily="serif"></TextView>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+
+                android:background="#070707"
+
+                android:text="Salon and Spa"
+                android:textAlignment="textStart"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                app:fontFamily="serif"></TextView></LinearLayout></LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ViewFlipper
+                    android:id="@+id/v1"
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    ></ViewFlipper>
+
+                <!-- TODO: Update blank fragment layout -->
+
+
+                <Button
+                    android:layout_width="160dp"
+                    android:layout_height="100dp"
+                    android:text="Products"
+                    android:textSize="15sp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginTop="350dp"
+                    android:layout_marginLeft="10dp"
+                    android:backgroundTint="#DF2A67"
+                    android:id="@+id/b1"
+                    android:drawableTop="@drawable/pro2"
+                    android:gravity="left|center"
+                    android:textAlignment="center"
+                    android:padding="5dp"
+                    android:onClick="products"
+                    app:cornerRadius="20dp"></Button>
+                <Button
+                    android:layout_width="160dp"
+                    android:layout_height="100dp"
+                    android:text="Services"
+                    android:textSize="15sp"
+                    android:layout_alignParentRight="true"
+                    android:drawableTop="@drawable/ser"
+                    android:gravity="left|center"
+                    android:textAlignment="center"
+                    android:padding="5dp"
+                    android:layout_marginTop="350dp"
+                    android:backgroundTint="#03A9F4"
+                    android:layout_marginRight="10dp"
+                    android:onClick="services"
+                    app:cornerRadius="20dp"></Button>
+
+                <Button
+                    android:id="@+id/b3"
+                    android:layout_width="160dp"
+                    android:layout_height="100dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="500dp"
+                    android:text="View Account"
+                    android:textSize="15sp"
+                    app:backgroundTint="#9C27B0"
+                    android:drawableTop="@drawable/acc"
+                    android:gravity="left|center"
+                    android:textAlignment="center"
+                    android:onClick="Appointment"
+                    app:cornerRadius="20dp"></Button>
+                <Button
+                    android:layout_width="160dp"
+                    android:layout_height="100dp"
+                    android:text="Appointment"
+                    android:textSize="13sp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="500dp"
+                    android:backgroundTint="#8BC34A"
+                    android:layout_marginRight="10dp"
+                    android:drawableTop="@drawable/app"
+                    android:gravity="left|center"
+                    android:textAlignment="center"
+                    app:cornerRadius="20dp"></Button>
+
+            </RelativeLayout>
+
+        </LinearLayout></ScrollView>
+</LinearLayout>
